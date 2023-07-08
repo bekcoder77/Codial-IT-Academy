@@ -17,7 +17,6 @@ function Footer() {
         </div>
         <div class={sty.haqida}>
             <div>
-                {/* <h5> <br> Yangiliklar <br> Kurslar</h5> */}
                 <h5> Sahifalar <br />  Biz haqimizda <br />  Kurslar</h5>
             </div>
             <div>

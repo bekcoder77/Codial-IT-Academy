@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Card({ item }) {
   return (
@@ -14,9 +15,13 @@ function Card({ item }) {
               <li>Notion</li>
               <li>Canva</li>
             </ul>
-            <a href="savodxonlik.html">
+            {/* <a href="savodxonlik.html">
               <div class="btn1">Batafsil</div>
-            </a>
+            </a> */}
+
+           <div className="btn1">
+           <Link to={item.link}>Batafsil</Link>
+           </div>
       </div>
   );
 }

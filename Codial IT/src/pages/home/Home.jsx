@@ -9,6 +9,7 @@ function Home() {
     {
       img: "./assets/card i.png",
       title: "Kompyuter savodxonligi",
+      link:"/savodxonlik",
       info: [
         "Word",
         " Microsoft office",
@@ -21,6 +22,7 @@ function Home() {
     {
       img: "./assets/card i2.png",
       title: "Android dasturlash",
+      link:"/android",
       info: [
         "Word",
         " Microsoft office",
@@ -33,6 +35,7 @@ function Home() {
     {
       img: "./assets/card i3.png",
       title: "Frontend",
+      link:"/frontend",
       info: [
         "Word",
         " Microsoft office",
@@ -45,6 +48,7 @@ function Home() {
     {
       img: "./assets/card i4.png",
       title: "Backend",
+      link:"/backend",
       info: [
         "Word",
         " Microsoft office",
@@ -57,6 +61,7 @@ function Home() {
     {
       img: "./assets/card i5.png",
       title: "Grafik dizayn",
+      link:"/dizayn",
       info: [
         "Word",
         " Microsoft office",

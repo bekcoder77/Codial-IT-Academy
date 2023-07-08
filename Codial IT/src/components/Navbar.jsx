@@ -1,5 +1,8 @@
 import React from 'react'
 import sty from "./Navbar.module.css"
+import { Link } from 'react-router-dom'
+import Home from "../pages/home/Home";
+
 
 function Navbar() {
   return (
@@ -16,7 +19,7 @@ function Navbar() {
             <a href="#login">Ro’yxatdan o’tish</a>
         </div>
         <div className={sty.logo}>
-            <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+            <Link to="/"> <img src="./assets/logo.png" alt="logo" />  </Link>
         </div>
         <div className={sty.nav}>
             <a href="#courses">Kurslar</a>
