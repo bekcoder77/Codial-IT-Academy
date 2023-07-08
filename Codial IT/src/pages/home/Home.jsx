@@ -64,7 +64,7 @@ function Home() {
 
   // const scrollBtn = document.querySelector('.scrollToTop-btn')
   // window.addEventListener('scroll', ()=> {
-  //     scrollBtn.current.classList.toggle('active', window.scrollY > 300)
+  //     scrollBtn.classList.toggle('active', window.scrollY > 300)
   // })
   // scrollBtn.addEventListener('click', () => {
   //     document.body.scrollTop=0;
@@ -90,6 +90,7 @@ function Home() {
           </a>
         </div>
       </header>
+      
       <div className="courses" id="courses">
         <div className="cards">
           {data.map((item, idx) => {

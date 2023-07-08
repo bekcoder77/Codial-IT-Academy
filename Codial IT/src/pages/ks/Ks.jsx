@@ -42,7 +42,7 @@ function Ks() {
             </div>
           </div>
           <div className={s.box2}>
-            <img src="./assets/savodxonlik.png" alt="" />
+            <img className="ks_img" src="./assets/savodxonlik.png" alt="" />
           </div>
         </div>
 

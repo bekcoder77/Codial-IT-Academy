@@ -38,3 +38,39 @@
 .haqida h6 {
   font-size: 8px;
 }
+
+@media (max-width: 447px){
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.logo2{
+    padding: 0;
+    width: 25%;
+}
+.logo2 img{
+    margin: 0;
+    width: 100%;
+}
+.tarmoqlar{
+    width: 45%;
+    padding: 0;
+}
+
+.haqida{
+    width: 80%;
+}
+.biz-haqimizda{
+    height: 55vh;
+}
+.codial{
+    width: 95%;
+    margin-top: 10px !important;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+}

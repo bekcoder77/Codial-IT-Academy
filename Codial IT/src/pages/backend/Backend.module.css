@@ -1,21 +1,20 @@
 .header {
     width: 100%;
-    height: 110vh;
+    /* height: 110vh; */
     background-image: url(../assets/etap.png);
     background-repeat: no-repeat;
     background-position-y: -40px;
     background-size: 90%;
     background-color: rgb(29, 83, 124);
     display: flex;
+    justify-content: space-around;
     align-items: center;
     padding-top: 100px;
     flex-wrap: wrap;
   }
   .header_info {
     width: 38%;
-    height: 80vh;
     color: white;
-    margin-top: 200px;
     margin-left: 8%;
   }
   .title {
@@ -24,6 +23,11 @@
     margin-top: -80px;
     margin-bottom: 20px;
   }
+  .header_img img{
+    width: 650px;
+    height: 600px;
+    margin-top: 40px;
+    }
   .cards {
     width: 100%;
     display: flex;
@@ -51,4 +55,25 @@
     height: 220px;
     cursor: pointer;
   }
+ 
+    @media (max-width: 447px){
+      .header_info{
+        width: 100%;
+        margin-left: 0;
+        padding:10px;
+      }
+      .header_img img{
+        width: 380px;
+        height: 300px;
+        }
+    .box2 img{
+      margin-top: -40px;
+      width: 360px;
+      height: 350px;
+    }
+     .cards{
+      flex-wrap: wrap;
+      margin-top: 200px;
+     }
+    }
   

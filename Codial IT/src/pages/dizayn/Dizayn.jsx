@@ -34,7 +34,7 @@ function Dizayn() {
               <Link to="/login">Ro’yxatdan o’tish</Link>
             </div>
           </div>
-          <div className="box2 dizaynimg">
+          <div className="box2">
             <img src="./assets/dizaynbg.png" alt="" />
           </div>
         </div>

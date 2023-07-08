@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   background-image: url(../assets/etap.png);
   background-repeat: no-repeat;
   background-position-y: -40px;
@@ -12,10 +12,13 @@
 }
 .header_info {
   width: 38%;
-  height: 80vh;
   color: white;
   margin-top: 200px;
   margin-left: 8%;
+}
+.header_img img{
+width: 750px;
+height: 600px;
 }
 .title {
   color: rgb(255, 255, 255);
@@ -64,4 +67,24 @@
   object-fit: cover;
   height: 220px;
   cursor: pointer;
+}
+@media (max-width: 447px){
+  .header_info{
+    width: 100%;
+    margin-left: 0;
+    padding:10px;
+  }
+  .header_img img{
+    width: 380px;
+    height: 300px;
+    }
+.box2 img{
+  margin-top: -40px;
+  width: 360px;
+  height: 350px;
+}
+ .cards{
+  flex-wrap: wrap;
+  margin-top: 200px;
+ }
 }

@@ -11,6 +11,7 @@
     padding-top: 80px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 .title{
@@ -26,8 +27,9 @@
     margin-left: 100px;
     line-height: 25px;
 }
-.androidimg{
-    margin-top: 100px;
+.androidimg img{
+    width: 650px;
+    height: 600px;
 }
 
 .btn{
@@ -66,4 +68,31 @@
   .block2 div img {
     margin-top: -20px;
     width: 70%;
+  }
+
+  @media (max-width: 447px){
+    .androidblock1{
+        height: 100vh;
+    }
+    .ks_info{
+      flex-wrap: wrap;
+    }
+    .title{
+        line-height: 50px;
+    }
+    .androidbox{
+        width: 100%;
+      padding: 10px;
+     margin-left: 0%;
+    }
+  .androidimg img{
+    margin-top: 0px;
+    width: 360px;
+    height: 350px;
+  }
+   .block2{
+    flex-wrap: wrap;
+    margin-top: 200px;
+   }
+  
   }

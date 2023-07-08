@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Card({ item }) {
   return (
-    <div data-aos="fade-right"
+    <div 
     className="card  ">
       <img className="animate__animated animate__fadeInLeft" src={item.img} alt="" />
       <h4 className="animate__animated animate__fadeInLeft">{item.title} </h4>

@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 a{
   color: white;
@@ -42,14 +43,17 @@ a{
   margin-top: 150px;
   margin-left: 10%;
 }
-.ks_left img {
-  width: 100%;
+.box2 img {
+  width: 650px;
+  height: 550px;
 }
+
 .cards {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 70px;
 }
 .cards div {
@@ -67,3 +71,23 @@ a{
   width: 70%;
 }
 
+
+
+@media (max-width: 447px){
+  .ks_info{
+    flex-wrap: wrap;
+  }
+  .ks_left{
+    padding: 10px;
+  margin-left: 0%;
+  }
+.box2 img{
+  margin-top: -40px;
+  width: 360px;
+  height: 350px;
+}
+ .cards{
+  flex-wrap: wrap;
+  margin-top: 200px;
+ }
+}
