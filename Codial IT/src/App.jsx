@@ -12,6 +12,8 @@ import Dizayn from "./pages/dizayn/Dizayn";
 import Login from "./pages/login/Login";
 import About from "./pages/about/About";
 import News from "./pages/news/News";
+import 'animate.css';
+
 
 function App() {
   

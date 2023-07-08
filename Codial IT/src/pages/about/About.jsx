@@ -4,7 +4,7 @@ import s from "./About.module.css";
 function About() {
   return (
     <div>
-      <div className={s.about} id="particles-js">
+      <div className={s.about }  id="particles-js">
         <div className={s.text4}>Biz haqimizda</div>
         <div className={s.codial}>
           Codial-Zamonaviy kasblar Akademiyasi 2021 yilning 18-yanvar kuni
