@@ -22,10 +22,10 @@ function Backend() {
       ]);
   return (
     <div>
-         <div class={s.backend}>
-        <div class={s.block1}>
-            <div class={s.box}>
-                <div class={s.text3}>
+         <div className={s.backend}>
+        <div className={s.block1}>
+            <div className={s.box}>
+                <div className={s.text3}>
                     Backend
                 </div>
                 <p>
@@ -40,11 +40,11 @@ function Backend() {
 
             
             </div>
-            <div class={s.box2}>
+            <div className={s.box2}>
                 <img src="./assets/backend.png" alt=""/>
             </div>
         </div>
-        <div class={s.block2}>
+        <div className={s.block2}>
           {backend.map((item)=>{
             return <Banner  item={item}/>
           })}

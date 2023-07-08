@@ -1,298 +1,313 @@
-header{
-    width: 100%;
-    height: 120vh;
-    background-image: url(../assets/bg.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: inline-block;
+header {
+  width: 100%;
+  height: 120vh;
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: inline-block;
 }
 
-.text1{
-    width: 45%;
-    margin-top: 280px;
-    margin-left: 18%;
-    color: white;
-    font-size: 48px;
-    line-height: 68px;
-    font-family: 'Poppins', sans-serif;
-}
-.text1 span{
-    color: rgb(255,157,0);
-}
-header .btn{
-    width: 220px;
-    color: white;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(29,83,124);
-    padding: 0 12px;
-    border-radius: 20px;
-    margin-left: 18%;
-    margin-top: 5px;
-}
-.btn p{
-    font-size: 12px;
-    /* letter-spacing: 1px; */
-    margin-left: 8px;
-    padding: 12px 5px;
-}
-.btn img{
-    width: 15px;
+.scrollToTop-btn {
+  z-index: 999;
+  position: fixed;
+  background-color: rgb(3, 86, 249);
+  color: white;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
-
-.courses{
-    background-image: url(../assets/bg2.png);
-    background-repeat: no-repeat;
-    background-position-y: -750px;
-    background-size: 100%;
-    background-color: rgb(245,245,245);
-    display: block;
-    border: 1px solid rgb(245,245,245);
+.scrollToTop-btn.active {
+  right: 20px;
+  opacity: 1;
 }
 
-.cards{
-    width: 70%;
-    margin-left: 15%;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 60px;
+.text1 {
+  width: 45%;
+  margin-top: 280px;
+  margin-left: 18%;
+  color: white;
+  font-size: 48px;
+  line-height: 68px;
+  font-family: "Poppins", sans-serif;
 }
-.card{
-    width: 30%;
-    min-height:  400px;
-    margin-top: 22px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 15px;
-    background-color: rgb(29,83,124);
-    color: white;
-    transition:  all 1s ease;
+.text1 span {
+  color: rgb(255, 157, 0);
 }
-.cards .card:hover{
-    transform: scale(1.12);
-    box-shadow: 0 0 20px 2px rgb(109, 109, 109);
-    z-index: 888;
+header .btn {
+  width: 220px;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(29, 83, 124);
+  padding: 0 12px;
+  border-radius: 20px;
+  margin-left: 18%;
+  margin-top: 5px;
 }
-.card:nth-child(2){
-    color: rgb(29,83,124);
+.btn p {
+  font-size: 12px;
+  /* letter-spacing: 1px; */
+  margin-left: 8px;
+  padding: 12px 5px;
 }
-.card:nth-child(2) li{
-    color: rgb(29,83,124);
-}
-.card:nth-child(2) .btn1{
-    color: white;
-}
-.card h4{
-    margin-left: 24px;
-    letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
-    margin-top: -15px;
-}
-.card a{
-    text-decoration: none;
-    color: white;
+.btn img {
+  width: 15px;
 }
 
-ul{
-    padding-left: 40px;
-    margin-top: 10px;
-    
-}
-ul li{
-    font-size: 16px;
-}
-ul li:hover{
-    cursor: pointer;
-    letter-spacing: 2px;
-    color: black;
-}
-button{
-    margin-bottom: 10px;
-}
-.btn1{
-    width: 74%;
-    margin-left: 13%;
-    margin-top: 20px;
-    height: 45px;
-    text-align: center;
-    font-family: 'poppins' , sans-serif;
-    line-height: 45px;
-    border-radius: 8px;
-    background: linear-gradient(90deg, rgb(54,157,254), rgb(3,86,249));
-    transition:  all .5s ease;
-}
-.btn1:hover, .btn4:hover{
-    background: linear-gradient(90deg, rgb(3,86,249), rgb(54,157,254));
-    box-shadow: 0 0 20px 2px black;
-}
-.cards .card:nth-child(2) .btn1{
-    margin-top: 24px;
-}
-.cards .card:nth-child(3) .btn1{
-    margin-top: 24px;
+.courses {
+  background-image: url(../assets/bg2.png);
+  background-repeat: no-repeat;
+  background-position-y: -750px;
+  background-size: 100%;
+  background-color: rgb(245, 245, 245);
+  display: block;
+  border: 1px solid rgb(245, 245, 245);
 }
 
-.card:nth-child(2){
-    background-color: white;
+.cards {
+  width: 70%;
+  margin-left: 15%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
 }
-.card img{
-    width: 150px;
-    height: 120px;
+.card {
+  width: 30%;
+  min-height: 400px;
+  margin-top: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: rgb(29, 83, 124);
+  color: white;
+  transition: all 1s ease;
 }
-.btn_far{
-    background: linear-gradient(90deg, rgb(3,86,249), rgb(54,157,254));
-    color: white;
-    padding: 5px 22px;
-    border-radius: 18px;
-    box-shadow: 0 0 10px 2px rgb(29,83,124);
-    transition:  all .5s ease-in-out;
-    cursor: pointer;
-
+.cards .card:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 20px 2px rgb(109, 109, 109);
+  z-index: 888;
 }
-.btn_marg{
-    /* background-color:  rgb(0, 22, 65); */
-    color: black;
-    padding: 5px 22px;
-    border-radius: 18px;
-    box-shadow: 0 0 10px 2px rgb(29,83,124);
-    transition:  all .5s ease-in-out;
-    cursor: pointer;
-
-}
-.btn_far:hover, .btn_marg:hover{
-    background: rgb(0, 22, 65);
-    color: white;
-    
+.card:nth-child(2) {
+  color: rgb(29, 83, 124);
 }
 
-.manzillar{
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-evenly;
-    align-items: center;
+.card:nth-child(2) li {
+  color: rgb(29, 83, 124);
 }
-.joylashuv2{
-    width: 100%;
-    box-shadow: 0 0 20px 5px rgb(29,83,124);
+.card:nth-child(2) .btn1 {
+  color: white;
 }
-.joylashuv1{
-    width: 100%;
-    box-shadow: 0 0 20px 5px rgb(29,83,124);
+.card ul li:nth-child(2) .btn1 {
+  color: red;
+  background-color: red;
 }
-.fergana{
-    width: 40%;
-    transition:  all 1s ease;
+.card h4 {
+  margin-left: 24px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  margin-top: -15px;
 }
-.fergana2{
-    opacity: 0;
-    display: none;
-}
-.margilon{
-    width: 30%;
-    transition:  all 1s ease;
-}
-.margilan2{
-    display: none;
-    opacity: 0;
-}
-.text2{
-    color: rgb(29,83,124);
-    font-size: 48px;
-    text-align: center;
-    margin-top: 40px;
-}
-.buttonlar{
-    width: 280px;
-    margin-top: 12px;
-    margin-left: 39%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.login{
-    width: 100%;
-    height: 104vh;
-    background-image: url(../img/Group\ 11.png);
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-color: rgb(245,245,245);
-    background-position-x: right;
-    background-position-y: 100px;
-    display: inline-block;
-}
-.body{
-    width: 100%;
-    display: flex;
-}
-.title{
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    border: 1px solid rgb(245,245,245);
-    font-size: 33px;
-    text-align: center;
-    color: rgb(29, 83, 124);
-    margin-top: 100px;
+.card a {
+  text-decoration: none;
+  color: white;
 }
 
-.label{
-    width: 40%;
-    text-align: right;
-    line-height: 50px;
-    margin-top: 115px;
+ul {
+  padding-left: 40px;
+  margin-top: 10px;
 }
-.input{
-    margin-left: 10px;
-    margin-top: 102px;
+ul li {
+  font-size: 16px;
 }
-.input input{
-    margin-top: 22px;
-    width: 420px;
-    height: 28px;
-    border: 1px solid rgb(217,217,217);
-    padding-left: 5px;
-    outline: none;
+ul li:hover {
+  cursor: pointer;
+  letter-spacing: 2px;
+  color: darkseagreen;
 }
-.input select{
-    outline: none;
-    width: 420px;
-    height: 28px;
-    margin-top: 24px;
-    border: 1px solid rgb(217,217,217);
+button {
+  margin-bottom: 10px;
 }
-.input textarea{
-    width: 420px;
-    margin-top: 21px;
-    padding-top: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border: 1px solid rgb(217,217,217);
+.btn1 {
+  width: 74%;
+  margin-left: 13%;
+  margin-top: 20px;
+  height: 45px;
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  line-height: 45px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgb(54, 157, 254), rgb(3, 86, 249));
+  transition: all 0.5s ease;
+}
+.btn1:hover,
+.btn4:hover {
+  background: linear-gradient(90deg, rgb(3, 86, 249), rgb(54, 157, 254));
+  box-shadow: 0 0 20px 2px black;
+}
+.cards .card:nth-child(2) .btn1 {
+  margin-top: 24px;
+}
+.cards .card:nth-child(3) .btn1 {
+  margin-top: 24px;
 }
 
-.btn{
-    width: 200px;
-    height: 40px;
-    background: linear-gradient(90deg, rgb(54,157,254), rgb(3,86,249));
-    color: white;
-    text-align: center;
-    margin-left: 48%;
-    margin-top: 15px;
-    font-size: 14px;
-    line-height: 40px;
-    border-radius: 7px;
-    transition:  all .3s ease;
+.card:nth-child(2) {
+  background-color: white;
 }
-.btn:hover{
-    cursor: pointer;
-    background: linear-gradient(90deg,rgb(3,86,249) ,  rgb(54,157,254));
-    box-shadow: 0px 0px 10px 4px rgb(118, 118, 216);
+.card img {
+  width: 150px;
+  height: 120px;
+}
+.btn_far {
+  background: linear-gradient(90deg, rgb(3, 86, 249), rgb(54, 157, 254));
+  color: white;
+  padding: 5px 22px;
+  border-radius: 18px;
+  box-shadow: 0 0 10px 2px rgb(29, 83, 124);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.btn_marg {
+  /* background-color:  rgb(0, 22, 65); */
+  color: black;
+  padding: 5px 22px;
+  border-radius: 18px;
+  box-shadow: 0 0 10px 2px rgb(29, 83, 124);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.btn_far:hover,
+.btn_marg:hover {
+  background: rgb(0, 22, 65);
+  color: white;
+}
+
+.text2 {
+  color: rgb(29, 83, 124);
+  font-size: 48px;
+  text-align: center;
+  margin-top: 80px;
+}
+.btns {
+  width: 280px;
+  margin-top: 12px;
+  margin-left: 39%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.login {
+  width: 100%;
+  height: 104vh;
+  background-image: url(../assets/login.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-color: rgb(245, 245, 245);
+  background-position-x: right;
+  background-position-y: 100px;
+  display: inline-block;
+}
+.body {
+  width: 100%;
+  display: flex;
+}
+.title {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgb(245, 245, 245);
+  font-size: 33px;
+  text-align: center;
+  color: rgb(29, 83, 124);
+  margin-top: 100px;
+}
+
+.label {
+  width: 40%;
+  text-align: right;
+  line-height: 50px;
+  margin-top: 115px;
+}
+.input {
+  margin-left: 10px;
+  margin-top: 102px;
+}
+.input input {
+  margin-top: 22px;
+  width: 420px;
+  height: 28px;
+  border: 1px solid rgb(217, 217, 217);
+  padding-left: 5px;
+  outline: none;
+}
+.input select {
+  outline: none;
+  width: 420px;
+  height: 28px;
+  margin-top: 24px;
+  border: 1px solid rgb(217, 217, 217);
+}
+.input textarea {
+  width: 420px;
+  margin-top: 21px;
+  padding-top: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid rgb(217, 217, 217);
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(90deg, rgb(54, 157, 254), rgb(3, 86, 249));
+  color: white;
+  text-align: center;
+  margin-left: 48%;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 40px;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, rgb(3, 86, 249), rgb(54, 157, 254));
+  box-shadow: 0px 0px 10px 4px rgb(118, 118, 216);
+}
+.location {
+  width: 100%;
+  height: 580px;
+  padding: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.ferghana_map {
+  position: absolute;
+  left: -300px;
+  width: 600px;
+  height: 400px;
+  border: 1px solid black;
+}
+.marglan_map {
+  position: absolute;
+  top: 40px;
+  border: 1px solid black;
+  right: 200px;
+  width: 450px;
+  height: 500px;
 }

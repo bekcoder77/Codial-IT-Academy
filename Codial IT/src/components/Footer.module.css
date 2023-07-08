@@ -1,40 +1,40 @@
-.footer{
-    width: 100%;
-    height: 140px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
+.footer {
+  width: 100%;
+  height: 140px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
 }
-.logo2 img{
-    width: 180px;
-    margin-left: 40px;
+.logo2 img {
+  width: 180px;
+  margin-left: 40px;
 }
-.logo2{
-    width: 48%;
+.logo2 {
+  width: 48%;
 }
-.tarmoqlar{
-    width: 25%;
+.tarmoqlar {
+  width: 25%;
 }
-.tarmoqlar img{
-    margin-left: 20px;
+.tarmoqlar img {
+  margin-left: 20px;
 }
-.tarmoqlar img:hover{
-    transform: scale(1.2);
-    margin-top: -10px;
+.tarmoqlar img:hover {
+  transform: scale(1.2);
+  margin-top: -10px;
 }
-.haqida{
-    width: 28%;
-    height: 100px;
-    display: flex;
-    color: rgb(29,83,124);
+.haqida {
+  width: 28%;
+  height: 100px;
+  display: flex;
+  color: rgb(29, 83, 124);
 }
-.haqida div:nth-child(1){
-    width: 35%;
+.haqida div:nth-child(1) {
+  width: 35%;
 }
-.haqida div h5{
-    margin-top: 10px;
+.haqida div h5 {
+  margin-top: 10px;
 }
-.haqida h6{
-    font-size: 8px;
+.haqida h6 {
+  font-size: 8px;
 }

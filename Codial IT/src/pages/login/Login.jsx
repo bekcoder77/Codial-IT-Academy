@@ -3,15 +3,15 @@ import React from 'react'
 function Login() {
   return (
     <div>
-          <div class="login reveal" id="login">
-        <div class="title">
+          <div className="login reveal" id="login">
+        <div className="title">
             Ro’yxatdan o’tish
         </div>
-        <div class="body reveal">
-            <div class="label">
+        <div className="body reveal">
+            <div className="label">
                 Ism: <br/> Familya: <br/>Kursni tanlang: <br/> Codial haqida qayerdan eshitdingiz:
             </div>
-            <div class="input">
+            <div className="input">
                 <input type="text" placeholder="Ismingizni kiriting..."/> <br/>
 
                 <input type="text" placeholder="Familyangizni kiriting..."/> <br/>
@@ -25,7 +25,7 @@ function Login() {
                 <textarea name="" id="" cols="30" rows="5" placeholder="izoh..."></textarea>
             </div>
         </div>
-        <div class="btn">Ro’yxatdan o’tish</div>
+        <div className="btn">Ro’yxatdan o’tish</div>
     </div>
     </div>
   )

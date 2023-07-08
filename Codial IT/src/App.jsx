@@ -10,6 +10,8 @@ import And from "./pages/android/And";
 import Backend from "./pages/backend/Backend";
 import Dizayn from "./pages/dizayn/Dizayn";
 import Login from "./pages/login/Login";
+import About from "./pages/about/About";
+import News from "./pages/news/News";
 
 function App() {
   
@@ -18,7 +20,7 @@ function App() {
       <BrowserRouter>
       
         <Navbar />
-        
+    
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path="/savodxonlik" element= { <Ks />}/>
@@ -27,6 +29,8 @@ function App() {
           <Route path="/dizayn" element= { <Dizayn />}/>
           <Route path="/android" element= { <And />}/>
           <Route path="/login" element= { <Login />}/>
+          <Route path="/about" element= { <About />}/>
+          <Route path="/news" element= { <News />}/>
 
         </Routes>
         <Footer />
