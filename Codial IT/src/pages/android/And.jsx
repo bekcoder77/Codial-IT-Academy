@@ -8,16 +8,16 @@ import Banner from "../banners/Banner";
 function And() {
   const [ad, setAd] = useState([
     {
-        img: "./assets/andro3.png",
+      img: "./assets/andro3.png",
 
-        title: "Kotlin",
+      title: "Kotlin",
     },
     {
       img: "./assets/andro1.png",
       title: "Android studio",
     },
     {
-        img: "./assets/andro2.png",
+      img: "./assets/andro2.png",
 
       title: "Java",
     },
@@ -27,7 +27,9 @@ function And() {
       <div className={s.android}>
         <div className={s.androidblock1}>
           <div className={s.androidbox}>
-            <div className={s.title}><h1>Android Dasturlash</h1></div>
+            <div className={s.title}>
+              <h1>Android Dasturlash</h1>
+            </div>
             <p>
               Kursimizning Kotlin qismida shu tillar sintaksisidan boshlab OOP,
               algoritmlar ni tuzish usullari, ma’lumotlar tuzilmasi, konsul
@@ -42,7 +44,9 @@ function And() {
               texnologiyalari bilan jamoaviy ishlashni shakllantirish.
             </p>
             <a href="http://127.0.0.1:5500/index.html#login">
-            <div className="btn4"><Link to="/login">Ro’yxatdan o’tish</Link></div>
+              <div className="btn4">
+                <Link to="/login">Ro’yxatdan o’tish</Link>
+              </div>
             </a>
           </div>
           <div className={s.androidimg}>

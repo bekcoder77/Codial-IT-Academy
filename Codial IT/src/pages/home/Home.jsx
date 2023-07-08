@@ -3,6 +3,8 @@ import "./Home.css";
 import Card from "../cards/Card";
 
 function Home() {
+  const [map , setMap] = useState(false)
+
   const [data, setData] = useState([
     {
       img: "./assets/card i.png",
@@ -40,7 +42,7 @@ function Home() {
       img: "./assets/card i4.png",
       title: "Backend",
       link: "/backend",
-      info: ["Python", " Postgresql", "  Docker ", "Flask microframework "],
+      info: ["Python", " Postgresql", "  Docker ", "Flask microframework ","Node Js" , "Firebase"],
     },
     {
       img: "./assets/card i5.png",
@@ -51,6 +53,8 @@ function Home() {
         " Adobe illustrator",
         "  Corel Draw ",
         "Dizayn texnologiyasi ",
+        "SMM",
+        "Docker"
       ],
     },
   ]);
@@ -89,13 +93,6 @@ function Home() {
       <div className="courses" id="courses">
         <div className="cards">
           {data.map((item, idx) => {
-            console.log(
-              item.info.map((items) => {
-                console.log(items);
-                {
-                }
-              })
-            );
             return <Card key={idx} item={item} />;
           })}
         </div>

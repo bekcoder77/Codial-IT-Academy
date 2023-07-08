@@ -311,3 +311,6 @@ button {
   width: 450px;
   height: 500px;
 }
+.ferghana_map.activ .marglan_map{
+  display: none;
+}

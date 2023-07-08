@@ -46,7 +46,7 @@ function Ks() {
           </div>
         </div>
 
-        <div className={s.block2}>
+        <div className={s.cards}>
           {img.map((item) => {
             return <Banner item={item} />;
           })}

@@ -22,9 +22,9 @@ function Fr() {
   return (
     <div>
       <div className={s.frontend}>
-        <div className={s.block1}>
-          <div className={s.box}>
-            <div className={s.text3}>Frontend</div>
+        <div className={s.header}>
+          <div className={s.header_info}>
+            <div className={s.title}>Frontend</div>
             <p>
               Frontend Development kursi 7 oyga mo’ljallangan, darslar eng yangi
               texnologiyalar orqali o’tiladi, bu texnologiya -lar yordamida
@@ -36,16 +36,16 @@ function Fr() {
               o’zlari yaratgan 30 ta loyihasi bilan bitiradilar.
             </p>
 
-            <div className={s.btn4}>
+            <div className={s.btn}>
               {" "}
               <Link to="/login">Ro’yxatdan o’tish</Link>
             </div>
           </div>
-          <div className={s.box2}>
+          <div className={s.header_img}>
             <img src="./assets/frontend.png" alt="" />
           </div>
         </div>
-        <div className={s.block2}>
+        <div className={s.cards}>
           {front.map((item) => {
             return <Banner item={item} />;
           })}
