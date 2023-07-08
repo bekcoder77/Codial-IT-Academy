@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Banner from "../banners/Banner";
 import s from "./Fr.module.css";
-
+import Login from "../login/Login";
+import { Link } from "react-router-dom";
 
 function Fr() {
   const [front, setFront] = useState([
     {
-        img: "./assets/js.png",
-        title: "JavaScript",
-      },
+      img: "./assets/js.png",
+      title: "JavaScript",
+    },
     {
       img: "./assets/css.png",
       title: "CSS",
@@ -17,7 +18,6 @@ function Fr() {
       img: "./assets/html.png",
       title: "Html",
     },
-  
   ]);
   return (
     <div>
@@ -35,9 +35,11 @@ function Fr() {
               topgan. Frontend kursini tamomlaydigan o’quvchilarning har biri
               o’zlari yaratgan 30 ta loyihasi bilan bitiradilar.
             </p>
-            
-            <div class={s.btn4}>Ro’yxatdan o’tish</div>
-          
+
+            <div class={s.btn4}>
+              {" "}
+              <Link to="/login">Ro’yxatdan o’tish</Link>
+            </div>
           </div>
           <div class={s.box2}>
             <img src="./assets/frontend.png" alt="" />

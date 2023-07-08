@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import s from "./And.module.css";
+import Login from "../login/Login";
+import { Link } from "react-router-dom";
 
 import Banner from "../banners/Banner";
 
@@ -40,7 +42,7 @@ function And() {
               texnologiyalari bilan jamoaviy ishlashni shakllantirish.
             </p>
             <a href="http://127.0.0.1:5500/index.html#login">
-              <div className={s.btn}>Ro’yxatdan o’tish</div>
+            <div className="btn4"><Link to="/login">Ro’yxatdan o’tish</Link></div>
             </a>
           </div>
           <div className={s.androidimg}>

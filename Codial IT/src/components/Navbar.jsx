@@ -2,6 +2,8 @@ import React from 'react'
 import sty from "./Navbar.module.css"
 import { Link } from 'react-router-dom'
 import Home from "../pages/home/Home";
+import Login from "../pages/login/Login";
+
 
 
 function Navbar() {
@@ -16,7 +18,8 @@ function Navbar() {
             <a href="#courses">Kurslar</a> <br />
             <a href="biz-haqimizda.html">Biz haqimizda</a> <br />
             <a href="#">Yangiliklar</a> <br />
-            <a href="#login">Ro’yxatdan o’tish</a>
+              <Link to="/login">Ro’yxatdan o’tish</Link>
+
         </div>
         <div className={sty.logo}>
             <Link to="/"> <img src="./assets/logo.png" alt="logo" />  </Link>
@@ -25,7 +28,8 @@ function Navbar() {
             <a href="#courses">Kurslar</a>
             <a href="biz-haqimizda.html">Biz haqimizda</a>
             <a href="#">Yangiliklar</a>
-            <a href="#login">Ro’yxatdan o’tish</a>
+             <Link to="/login">Ro’yxatdan o’tish</Link>
+
         </div>
         <div className={sty.number}>
           <img src="./assets/Group 2.png" alt="" />

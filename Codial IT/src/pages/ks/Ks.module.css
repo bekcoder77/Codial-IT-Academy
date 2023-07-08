@@ -10,6 +10,9 @@
   align-items: center;
   justify-content: space-around;
 }
+a{
+  color: white;
+}
 .ks_title{
     margin-top: -20px;
     margin-bottom: 20px;
