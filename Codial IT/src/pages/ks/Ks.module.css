@@ -74,12 +74,21 @@ a{
 
 
 @media (max-width: 447px){
+  .ks_title{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
   .ks_info{
     flex-wrap: wrap;
   }
   .ks_left{
-    padding: 10px;
-  margin-left: 0%;
+    padding: 30px;
+    margin-left: 0%;
+  }
+  .ks_left p{
+    margin-left: 0%;
+    font-size: 15px;
   }
 .box2 img{
   margin-top: -40px;
@@ -88,6 +97,6 @@ a{
 }
  .cards{
   flex-wrap: wrap;
-  margin-top: 200px;
+  margin-top: 0px;
  }
 }

@@ -72,12 +72,19 @@
 
   @media (max-width: 447px){
     .androidblock1{
-        height: 100vh;
+        height: 120vh;
     }
-    .ks_info{
+    .androidblock1{
       flex-wrap: wrap;
+      padding: 20px;
+      margin-top: 50px;
     }
+.androidblock1 p{
+  font-size: 14px;
+
+}
     .title{
+      font-size: 22px;
         line-height: 50px;
     }
     .androidbox{
@@ -92,7 +99,7 @@
   }
    .block2{
     flex-wrap: wrap;
-    margin-top: 200px;
+    margin-top: 0px;
    }
   
   }

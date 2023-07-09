@@ -18,7 +18,7 @@
     background-color: rgb(172, 114, 39);
     height: 50px;
 }
-.telmenular{
+.nav_btn{
     display: none;
 }
 .menular{
@@ -65,9 +65,12 @@
     color: white;
 }
 
-.nav_bar {
+/* .nav_bar {
   display: none;
   color: black;
+} */
+.nav_links{
+    display: none;
 }
 .nav-close-btn {
   color: white;
@@ -118,11 +121,33 @@ nav a {
     justify-content: space-between;
     align-items: center;
 }
-.telmenular{
+/* .nav_links{
+    display: block;
+} */
+.nav_bar nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #29335c;
+    transition: 1s;
+  }
+  .nav_bar .responsive_nav {
+    transform: translateY(100vh);
+    font-size: 32px;
+  }
+.nav_btn{
     display: block;
     color: white;
     font-size: 28px;
     margin-left: 20px;
+    cursor: pointer;
 }
 .logo{
     width: 50%;

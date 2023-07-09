@@ -17,14 +17,12 @@ function About() {
           o’rgatish va dunyo miqyosida yetakchi o'rinlarga olib chiqish.
         </div>
         <div className="video">
-          <iframe
+        <iframe
             width="460"
-            height="280"
+            height="350"
             src="https://www.youtube.com/embed/-NoS3W4qKbA"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
           ></iframe>
         </div>
       </div>

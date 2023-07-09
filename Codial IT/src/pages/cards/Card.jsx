@@ -8,8 +8,8 @@ function Card({ item }) {
       <img className="animate__animated animate__fadeInLeft" src={item.img} alt="" />
       <h4 className="animate__animated animate__fadeInLeft">{item.title} </h4>
       <ul>
-        {item.info.map((inf) => {
-          return <li className="animate__animated animate__fadeInLeft">{inf}</li>;
+        {item.info.map((inf,idx) => {
+          return <li key={idx} className="animate__animated animate__fadeInLeft">{inf}</li>;
         })}
       </ul>
       <div className="btn1 animate__animated animate__bounce animate__delay-2s">

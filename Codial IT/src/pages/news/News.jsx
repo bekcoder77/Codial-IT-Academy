@@ -17,8 +17,8 @@ function News() {
         </div>
         <div className="video">
           <iframe
-            width="460"
-            height="300"
+          width="460"
+          height="350"
             src="https://www.youtube.com/embed/E_yKY2nUGZ8"
             title="YouTube video player"
             frameborder="0"

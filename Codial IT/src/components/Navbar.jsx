@@ -10,7 +10,7 @@ import {MdClose} from "react-icons/md"
 
 function Navbar() {
 
-  const navRef = useRef()
+  const navRef = useRef();
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
@@ -35,23 +35,34 @@ function Navbar() {
             <div className={sty.num}>
               <a href="tel:+99899 820 44 32">+99899 820 44 32</a>
             </div>
+{/* 
             <div className="nav_bar">
-        {/* <nav>
-          <div className={sty.nav_links} >
+          <nav ref={navRef} className="nav_links">
+          <div onClick={showNavbar}>  <Link to="/project">Projects</Link></div>
+          <div onClick={showNavbar}>  <Link to="/Resume">Resume</Link></div>
+          <div onClick={showNavbar}>  <Link to="/Contact">Contact</Link></div>
+            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+              <MdClose />
+            </button>
+          </nav>
+          <button className="nav-btn m_black" onClick={showNavbar}>
+            <AiOutlineBars />
+          </button>
+        </div> */}
+            <div className="nav_bar">
+        <nav>
+            <div ref={navRef} className={sty.nav_links} >
             <a href="#courses">Kurslar</a> <br />
             <Link to="/about">Biz haqimizda</Link>
             <Link to="/news">Yangiliklar</Link>
             <Link to="/login">Ro’yxatdan o’tish</Link>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <button className={sty.nav_btn} onClick={showNavbar}>
               <MdClose />
             </button>
           </div>
-          </nav> */}
+       </nav>
 
-          {/* <button className="nav-btn m_black" onClick={showNavbar}>
-            <AiOutlineBars />
-          </button> */}
-          <div className={sty.telmenular}>
+          <div onClick={showNavbar} className={sty.nav_btn}>
             <i className="fa-solid fa-bars"></i>
           </div>
 
