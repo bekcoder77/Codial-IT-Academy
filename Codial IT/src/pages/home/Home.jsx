@@ -59,6 +59,7 @@ function Home() {
     },
   ]);
 
+
   // const scrollBtn = useRef()
   // console.log(scrollBtn);
 
@@ -74,9 +75,6 @@ function Home() {
   return (
     <div>
       <header>
-        <div className="scrollToTop-btn">
-          <i className="fa-solid fa-angles-up"></i>
-        </div>
         <div className="text1 animate__animated animate__fadeInLeft">
           Zamonaviy <span>IT</span> kasblarini biz bilan o’rganing
         </div>

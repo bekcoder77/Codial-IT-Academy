@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import sty from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import Home from "../pages/home/Home";
@@ -14,8 +14,22 @@ function Navbar() {
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
+  const [show ,setShow] = useState(false)
+
+window.addEventListener("scroll" ,()=>{
+if(window.scrollY > 300){
+  setShow(true)
+}else{
+  setShow(false)
+}
+})
   return (
     <div>
+      <div onClick={()=>{
+          document.documentElement.scrollTop =0;
+        }} className={show ? "scrollToTop-btn active" : "scrollToTop-btn"}>
+          <i className="fa-solid fa-angles-up"></i>
+        </div>
       <div className={sty.container}>
         <div className={sty.navbar}>
           <div className={sty.logo}>
@@ -25,7 +39,7 @@ function Navbar() {
             </Link>
           </div>
           <div className={sty.nav}>
-            <a href="#courses">Kurslar</a>
+            <Link to="/">Kurslar</Link>
             <Link to="/about">Biz haqimizda</Link>
             <Link to="/news">Yangiliklar</Link>
             <Link to="/login">Ro’yxatdan o’tish</Link>
@@ -52,7 +66,7 @@ function Navbar() {
             <div className="nav_bar">
         <nav>
             <div ref={navRef} className={sty.nav_links} >
-            <a href="#courses">Kurslar</a> <br />
+            <Link to="/">Kurslar</Link> <br />
             <Link to="/about">Biz haqimizda</Link>
             <Link to="/news">Yangiliklar</Link>
             <Link to="/login">Ro’yxatdan o’tish</Link>

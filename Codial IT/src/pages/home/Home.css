@@ -91,7 +91,7 @@ header .btn {
   border-radius: 15px;
   background-color: rgb(29, 83, 124);
   color: white;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 .cards .card:hover {
   transform: scale(1.12);
@@ -129,6 +129,9 @@ ul {
 }
 ul li {
   font-size: 16px;
+  transition: all .2s ease;
+
+  
 }
 ul li:hover {
   cursor: pointer;
