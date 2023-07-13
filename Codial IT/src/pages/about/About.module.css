@@ -25,6 +25,7 @@
   background-color: rgb(245, 245, 245);
   display: block;
   border: 1px solid rgb(245, 245, 245);
+  margin-bottom: 30px;
 }
 .text4 {
   width: 100%;
@@ -35,18 +36,13 @@
   color: rgb(29, 83, 124);
 }
 
-iframe{
-    padding-bottom: 40px;
-    margin-left: 500px;
-    margin-top: 20px;
-    border: none;
-}
 @media (max-width: 447px) {
- 
+
   .codial {
     font-size: 18px;
     width: 80%;
     left: 1%;
-    padding: 0px;
+    padding: 10px;
+    height: 500px;
   }
 }

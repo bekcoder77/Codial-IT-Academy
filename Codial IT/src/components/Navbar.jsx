@@ -8,7 +8,9 @@ import News from "../pages/news/News";
 import { AiOutlineBars } from "react-icons/ai";
 import {MdClose} from "react-icons/md"
 
+
 function Navbar() {
+  const [menu, setMenu] = useState(false)
 
   const navRef = useRef();
   const showNavbar = () => {
@@ -24,7 +26,7 @@ if(window.scrollY > 300){
 }
 })
   return (
-    <div>
+    <div >
       <div onClick={()=>{
           document.documentElement.scrollTop =0;
         }} className={show ? "scrollToTop-btn active" : "scrollToTop-btn"}>
@@ -49,34 +51,42 @@ if(window.scrollY > 300){
             <div className={sty.num}>
               <a href="tel:+99899 820 44 32">+99899 820 44 32</a>
             </div>
-{/* 
-            <div className="nav_bar">
+
+            <div className={"nav_bar"} style={menu ? {display:"block", width:"100%", background:"black", position:"fixed", top:0,left:0} : {display: "none"}}>
           <nav ref={navRef} className="nav_links">
           <div onClick={showNavbar}>  <Link to="/project">Projects</Link></div>
           <div onClick={showNavbar}>  <Link to="/Resume">Resume</Link></div>
           <div onClick={showNavbar}>  <Link to="/Contact">Contact</Link></div>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+            <button className="nav-btn nav-close-btn" style={{
+              position: "absolute",
+              top:20,
+              right: 10,
+              padding: " 10px",
+              fontSize: "18px",
+              background: "cadetblue",
+              color:'white',
+              border:'none',
+              cursor:"pointer"
+            }} onClick={()=> setMenu(false)}>
               <MdClose />
             </button>
           </nav>
-          <button className="nav-btn m_black" onClick={showNavbar}>
-            <AiOutlineBars />
-          </button>
-        </div> */}
+      
+        </div> 
             <div className="nav_bar">
         <nav>
             <div ref={navRef} className={sty.nav_links} >
             <Link to="/">Kurslar</Link> <br />
             <Link to="/about">Biz haqimizda</Link>
             <Link to="/news">Yangiliklar</Link>
-            <Link to="/login">Ro’yxatdan o’tish</Link>
+            <Link to="/login">Ro’yxatdan o’tish</Link>showNavbar
             <button className={sty.nav_btn} onClick={showNavbar}>
               <MdClose />
             </button>
           </div>
        </nav>
 
-          <div onClick={showNavbar} className={sty.nav_btn}>
+          <div onClick={()=> setMenu(true)} className={sty.nav_btn}>
             <i className="fa-solid fa-bars"></i>
           </div>
 

@@ -14,6 +14,14 @@ import About from "./pages/about/About";
 import News from "./pages/news/News";
 import 'animate.css';
 
+const NotFound = () => {
+  return (
+    <h1 style={{
+      padding: "100px"
+    }}>Not found</h1>
+  )
+}
+
 
 function App() {
   
@@ -22,10 +30,9 @@ function App() {
       <BrowserRouter>
       
         <Navbar />
-    
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path="/savodxonlik" element= { <Ks />}/>
+          <Route path="/savodxonlik" element= { <Ks />}/> 
           <Route path="/frontend" element= { <Fr />}/>
           <Route path="/backend" element= { <Backend />}/>
           <Route path="/dizayn" element= { <Dizayn />}/>
@@ -33,7 +40,7 @@ function App() {
           <Route path="/login" element= { <Login />}/>
           <Route path="/about" element= { <About />}/>
           <Route path="/news" element= { <News />}/>
-
+          <Route path="*" element={<NotFound/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

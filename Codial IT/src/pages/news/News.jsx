@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import ModalVideo from 'react-modal-video';
+import "./Main.scss"
 import s from "./News.module.css";
 
 function News() {
+  const [isOpen, setOpen] = useState(false);
+
+
   return (
     <div>
       <div className={s.news}>
@@ -16,15 +22,16 @@ function News() {
           Bu bizning 3-filialimiz hisoblanadi.
         </div>
         <div className="video">
-          <iframe
-          width="460"
-          height="350"
-            src="https://www.youtube.com/embed/E_yKY2nUGZ8"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+        <ModalVideo
+				channel="youtube"
+				youtube={{ mute: 0, autoplay: 0 }}
+				isOpen={isOpen}
+				videoId="E_yKY2nUGZ8"
+				onClose={() => setOpen(false)} 
+			/>
+      <button className="btn-primary" onClick={() => setOpen(true)}>
+        VIEW VIDEO
+      </button>
         </div>
       </div>
     </div>

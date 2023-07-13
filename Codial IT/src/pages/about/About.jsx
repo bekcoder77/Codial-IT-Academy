@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import ModalVideo from 'react-modal-video';
+import "./Main.scss"
 import s from "./About.module.css";
 
 function About() {
+
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <div>
       <div className={s.about }  id="particles-js">
@@ -17,13 +23,16 @@ function About() {
           o’rgatish va dunyo miqyosida yetakchi o'rinlarga olib chiqish.
         </div>
         <div className="video">
-        <iframe
-            width="460"
-            height="350"
-            src="https://www.youtube.com/embed/-NoS3W4qKbA"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          ></iframe>
+        <ModalVideo
+				channel="youtube"
+				youtube={{ mute: 0, autoplay: 0 }}
+				isOpen={isOpen}
+				videoId="-NoS3W4qKbA"
+				onClose={() => setOpen(false)} 
+			/>
+      <button className="btn-primary" onClick={() => setOpen(true)}>
+      VIEW VIDEO
+      </button>
         </div>
       </div>
     </div>

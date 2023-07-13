@@ -88,6 +88,7 @@
     color: white;
 }
 
+
 /* .nav_bar {
   display: none;
   color: black;
@@ -143,6 +144,9 @@ nav a {
 .navbar{
     justify-content: space-between;
     align-items: center;
+}
+.hidden {
+    display: none;
 }
 /* .nav_links{
     display: block;
