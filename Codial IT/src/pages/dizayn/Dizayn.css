@@ -36,7 +36,6 @@
   margin-top: 100px;
   margin-left: 15%;
 }
-
 .block2 {
   width: 100%;
   display: flex;
@@ -54,7 +53,6 @@
   color: white;
   border-radius: 8px;
 }
-
 @media (max-width: 447px) {
   .block1 {
     padding-top: 100px;
@@ -65,7 +63,6 @@
     margin-left: 0;
     padding: 40px;
   }
-
   .box2 img {
     margin-top: 140px;
     width: 340px;

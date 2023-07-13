@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import ModalVideo from 'react-modal-video';
 import "./Main.scss"
-import s from "./About.module.css";
 
 function About() {
 
@@ -10,9 +9,9 @@ function About() {
 
   return (
     <div>
-      <div className={s.about }  id="particles-js">
-        <div className={s.text4}>Biz haqimizda</div>
-        <div className={s.codial}>
+      <div className="about"  id="particles-js">
+        <div className="about_title">Biz haqimizda</div>
+        <div className="codial">
           Codial-Zamonaviy kasblar Akademiyasi 2021 yilning 18-yanvar kuni
           Muhammad Amin Naziraliyev tomonidan asos solingan. Hozirga qadar
           akdemiyamizni 500 ga yaqin o’quvchilar bitirgan. <br />

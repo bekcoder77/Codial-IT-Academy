@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import ModalVideo from 'react-modal-video';
 import "./Main.scss"
-import s from "./News.module.css";
 
 function News() {
   const [isOpen, setOpen] = useState(false);
@@ -10,9 +9,9 @@ function News() {
 
   return (
     <div>
-      <div className={s.news}>
-        <div className={s.title}>Yangiliklar</div>
-        <div className={s.codial}>
+      <div className="about">
+        <div className="about_title">Yangiliklar</div>
+        <div className="codial">
           IT sohasiga qiziqqanlar uchun ajoyib yangilik! Codial'ning yana bir
           filiali ilm ulashishga tayyor! Andijon shahar, Milliy Tiklanish
           ko‘chasi, malaka oshirish instituti tomonga yo‘lingiz tushsa,
