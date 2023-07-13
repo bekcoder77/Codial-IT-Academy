@@ -12,23 +12,3 @@
   border-radius: 10px;
 }
 
-@media (max-width: 447px) {
-  .block1 {
-    padding-top: 100px;
-    height: 80vh;
-  }
-  .box {
-    width: 100%;
-    margin-left: 0;
-    padding: 40px;
-  }
-  .box2 img {
-    margin-top: 140px;
-    width: 340px;
-    height: 320px;
-  }
-  .cards {
-    flex-wrap: wrap;
-    margin-top: 200px;
-  }
-}

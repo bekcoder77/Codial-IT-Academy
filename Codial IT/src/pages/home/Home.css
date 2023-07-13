@@ -37,7 +37,6 @@ header {
   color: white;
   font-size: 48px;
   line-height: 68px;
-  font-family: "Poppins", sans-serif;
 }
 .text1 span {
   color: rgb(255, 157, 0);
@@ -279,6 +278,7 @@ button {
   border-radius: 7px;
   transition: all 0.3s ease;
 }
+
 .btn:hover {
   cursor: pointer;
   background: linear-gradient(90deg, rgb(3, 86, 249), rgb(54, 157, 254));
@@ -376,7 +376,6 @@ button {
 }
 .ferghana_map {
   top: 50px;
-  /* left: -375px; */
   width: 350px;
   height: 350px;
 }
@@ -401,12 +400,9 @@ button {
     height: 250px;
   }
 }
-
-
 @media (max-width: 768px){
   .ferghana_map {
     top: 320px;
-    /* left: -375px; */
     width: 350px;
     height: 250px;
   }
@@ -417,9 +413,7 @@ button {
     height: 250px;
   }
 }
-
 @media (max-width: 447px){
- 
   header{
       width: 100%;
       height: 280px;
