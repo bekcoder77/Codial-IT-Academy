@@ -22,23 +22,26 @@ function Dizayn() {
   return (
     <div>
       <div className="dizayn">
-        <div className="block1">
-          <div className="box">
-            <div className="text3">Grafik dizayn</div>
-            <p>
+        <div className="block1 w-[100%] h-[100vh] flex">
+          <div className="box w-[40%] text-white mt-[150px] ml-[8%]">
+            <div className="text-white text-4xl mb-5">Grafik dizayn</div>
+            <p className="">
               Bu kurs 4 oyga mo’ljallangan. Kurs davomida Adobe Photoshop, Adobe
               Illustrator va Corel Draw kabi dasturlar o’rgatiladi. O’quvchilar
               bilimlarini real SMM dizaynlarda qo’llab ko’rishadi.
+              Bu soha vakillari, grafik dizaynerlar, vizual xabarlarni talqin qilish, ularni tartiblash va mijozga taqdim etish ustida ishlaydi. Dizayn ishi mijozning talabiga asoslanishi mumkin, bu talab lingvistik jihatdan ogʻzaki yoki yozma ravishda belgilanadi, yaʼni grafik dizayner mijozning ogʻzaki yoki yozma xabarini grafik koʻrinishga aylantiradi.
+
+Grafik dizayn, qoʻllash sohasiga koʻra har qanday vizual aloqa bilan bogʻliq turli xil sohalarga ega. 
             </p>
-            <div className="btn4">
+            <div className="btn1">
               <Link to="/login">Ro’yxatdan o’tish</Link>
             </div>
           </div>
           <div className="box2">
-            <img src="./assets/dizaynbg.png" alt="" />
+            <  img className="w-[560px] h-[600px] ml-[15%] mt-[100px]" src="./assets/dizaynbg.png" alt="" />
           </div>
         </div>
-        <div className="block2">
+        <div className="block2 flex justify-evenly items-center bg-[rgb(245, 245, 245)] pb-10">
           {img.map((item) => {
             return <Banner item={item} />;
           })}

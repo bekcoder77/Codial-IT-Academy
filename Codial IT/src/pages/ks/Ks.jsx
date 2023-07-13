@@ -35,6 +35,9 @@ function Ks() {
               kompaniyasining Windows operatsion tizimlari hamda Office
               dasturlarini o’rganasiz va hozirda dunyoda trendda bo’layotgan
               yana bir qancha yo’nalishlar o’rgatiladi.
+              – Internet davrining qulayliklaridan faol va unumli foydalana oladigan, kundalik turmushda va ish faoliyatingizda elektron pochta, audio-video suhbatlar orqali masofa va vaqtni tejashni o‘rganasiz, internetda o‘zingizga kerakli ma’lumotlarni qidirib topish, tahrirlash, jo‘natish usullarini bilib olasiz.
+
+– Kompyuterdan foydalanishda uni buzub qo‘yishdan, xato qilishdan qo‘rqmaydigan bo‘lasiz. Kompyuterning tuzilishi, qurulmalari, ishlash prinsiplarni bilib olishingiz sizga aqlli texnika ustidan hukmronlikni taqdim etadi.
             </p>
             <div className={s.ks_btn}>
               {" "}

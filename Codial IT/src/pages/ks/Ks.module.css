@@ -7,13 +7,10 @@
   background-size: 90%;
   background-color: rgb(29, 83, 124);
   display: flex;
-  align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 10px;
 }
-a{
-  color: white;
-}
+
 .ks_title{
     margin-top: -20px;
     margin-bottom: 20px;
@@ -23,12 +20,10 @@ a{
   color: white;
 }
 .ks_btn {
+  padding: 10px 25px;
   width: 200px;
-  height: 40px;
   background: linear-gradient(90deg, rgb(54, 157, 254), rgb(3, 86, 249));
-  line-height: 40px;
   border-radius: 10px;
-  text-align: center;
   cursor: pointer;
   margin-top: 40px;
   transition: all 0.5s ease;
@@ -44,8 +39,9 @@ a{
   margin-left: 10%;
 }
 .box2 img {
-  width: 650px;
+  width: 550px;
   height: 550px;
+  margin-top: 20px;
 }
 
 .cards {
@@ -68,7 +64,8 @@ a{
 }
 .cards div img {
   margin-top: -20px;
-  width: 70%;
+  margin-left: 20px;
+  width: 90%;
 }
 
 

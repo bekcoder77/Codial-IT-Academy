@@ -6,7 +6,6 @@ function Footer() {
     <div>
       <div className={sty.footer}>
         <div className={sty.logo2}>
-          {/* <img src="img/logo academiya 1.png" alt=""> */}
           <img src="./assets/flogo.png" alt="logo" />
         </div>
         <div className={sty.tarmoqlar}>
