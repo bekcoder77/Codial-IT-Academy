@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Card({ item }) {
+
+  useEffect(()=>{
+    AOS.init({
+      offset: 200,
+      duration: 500,
+      easing: 'linear',
+      delay: 100,
+    });
+  },[])
   return (
     <div 
-    className="card  ">
-      <img className="animate__animated animate__fadeInLeft" src={item.img} alt="" />
-      <h4 className="animate__animated animate__fadeInLeft text-xl">{item.title} </h4>
-      <ul>
+       className="card  ">
+      <img   className="animate__animated animate__fadeInLeft" src={item.img} alt="" />
+      <h4   className="animate__animated animate__fadeInLeft text-xl">{item.title} </h4>
+      <ul  >
         {item.info.map((inf,idx) => {
           return <li key={idx} className="animate__animated animate__fadeInLeft">{inf}</li>;
         })}

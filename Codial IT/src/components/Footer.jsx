@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import sty from "./Footer.module.css";
 
 function Footer() {
+
+
+
   return (
-    <div>
-      <div className={sty.footer}>
+    <div >
+      <div  className={sty.footer}>
         <div className={sty.logo2}>
           <img src="./assets/flogo.png" alt="logo" />
         </div>
